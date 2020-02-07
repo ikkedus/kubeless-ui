@@ -1,6 +1,9 @@
 FROM bitnami/node:8 as builder
 
-COPY . /app
+RUN apt-get update
+RUN apt-get install -y git
+
+RUN git clone https://ikkedus:Voc@l0id@github.com/ikkedus/kubeless-ui.git app
 
 WORKDIR /app
 

@@ -98,6 +98,8 @@ spec:
         - "-p"
         - "8080"
       serviceAccountName: ui-acct
+      imagePullSecrets:
+        - name: regcred
 ---
 apiVersion: v1
 kind: Service
