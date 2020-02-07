@@ -85,7 +85,7 @@ spec:
     spec:
       containers:
       - name: ui
-        image: ikkedus/kubeless-ui:latest
+        image: ikkedus/kubeless-ui-image:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
